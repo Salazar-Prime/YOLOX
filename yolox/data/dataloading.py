@@ -2,7 +2,7 @@
 # -*- coding:utf-8 -*-
 # Copyright (c) Megvii, Inc. and its affiliates.
 
-import os
+import os, sys
 import random
 import uuid
 
@@ -12,7 +12,8 @@ import torch
 from torch.utils.data.dataloader import DataLoader as torchDataLoader
 from torch.utils.data.dataloader import default_collate
 
-from .samplers import YoloBatchSampler
+# USER imports
+from samplers import YoloBatchSampler
 
 
 def get_yolox_datadir():

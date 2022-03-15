@@ -9,8 +9,8 @@ import cv2
 import numpy as np
 from pycocotools.coco import COCO
 
-from ..dataloading import get_yolox_datadir
-from .datasets_wrapper import Dataset
+from dataloading import get_yolox_datadir
+from datasets.datasets_wrapper import Dataset
 
 
 def remove_useless_info(coco):
