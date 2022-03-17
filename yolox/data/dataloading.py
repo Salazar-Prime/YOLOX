@@ -13,7 +13,7 @@ from torch.utils.data.dataloader import DataLoader as torchDataLoader
 from torch.utils.data.dataloader import default_collate
 
 # USER imports
-from samplers import YoloBatchSampler
+from .samplers import YoloBatchSampler
 
 
 def get_yolox_datadir():
